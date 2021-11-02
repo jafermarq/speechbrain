@@ -20,9 +20,9 @@ import time
 import torchaudio
 import json
 import re
-from speechbrain.utils.torch_audio_backend import get_torchaudio_backend
+# from speechbrain.utils.torch_audio_backend import get_torchaudio_backend
 
-torchaudio_backend = get_torchaudio_backend()
+torchaudio_backend = "soundfile"
 torchaudio.set_audio_backend(torchaudio_backend)
 logger = logging.getLogger(__name__)
 
